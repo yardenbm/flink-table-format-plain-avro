@@ -1,4 +1,4 @@
-package org.example.flink.plain.avro;
+package org.example.flink;
 
 import org.apache.avro.Schema;
 import org.apache.flink.api.java.utils.ParameterTool;
@@ -7,8 +7,6 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.TableDescriptor;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.example.Student;
-
-import java.util.Objects;
 
 public class ExamplePipeline {
     public static void main(String[] args) {
