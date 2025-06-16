@@ -1,0 +1,9 @@
+@namespace("org.example")
+protocol MyAvro {
+
+    record Student {
+        string name;
+        string id;
+        int? age;
+    }
+}
