@@ -6,6 +6,7 @@ import org.apache.flink.table.types.logical.*;
 
 import java.io.IOException;
 
+// A utility class that helps with understanding of the mapping from Flink RowType -> Avro schema.
 public class RowTypeToAvroSchemaExample {
     public static void main(String[] args) throws IOException {
         RowType rowType = RowType.of(
