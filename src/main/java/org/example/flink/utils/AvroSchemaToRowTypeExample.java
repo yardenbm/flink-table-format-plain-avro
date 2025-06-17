@@ -6,6 +6,7 @@ import org.example.Student;
 
 import java.io.IOException;
 
+// A utility class that helps with understanding of the mapping from Avro schema -> Flink RowType.
 public class AvroSchemaToRowTypeExample {
     public static void main(String[] args) throws IOException {
         // Load Avro schema from a generated class
