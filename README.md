@@ -2,7 +2,7 @@
 
 This is a simple example project demonstrating how to create a custom format for Apache Flink Table API that explicitly defines the schema for Avro data. This example shows how to bypass Flink's automatic schema inference when using Kafka as a connector.
 
-> **Note**: This is nothing official, but a minimal example showing how to implement custom serialization/deserialization in Flink Table API.
+> **Note**: This is just a minimal example showing how I implemented custom serialization/deserialization in Flink Table API.
 
 ## Quick Start
 
@@ -48,11 +48,9 @@ tableEnv.createTemporaryTable(avroSchema.getName() + "_table",
 
 ## Implementation Details
 
-This example demonstrates:
-- How to create a custom format for Flink Table API
-- Explicit schema definition instead of automatic inference
-- Integration with Kafka as a data source
-- Both DDL and programmatic table creation approaches
+- A short example on how to create a custom format for Flink Table API
+- usage of explicit schema definition instead of automatic inference using Table API
+- Both DDL and programmatic table creation usage examples
 
 **Important:**  
 This example includes the file `src/main/resources/META-INF/services/org.apache.flink.table.factories.Factory`.  
